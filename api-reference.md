@@ -29,7 +29,9 @@ https://api.qicoo.xx/
 
 ## Cookie
 
-**詳細は要追記。どのようなフローでsessionidをClient側やServer側に保存するのか。**
+
+
+![Cookie Flow](https://github.com/Sugi275/qa-apps-docs/blob/master/1346_7081.png "サンプル")
 
 Client側にsession idを保存するため、Cookieを利用します。Cookieの中に「user_session:hogehoge」という形で session id を保存します。
 
