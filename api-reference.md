@@ -32,6 +32,7 @@ https://api.qicoo.xx/
 **詳細は要追記。どのようなフローでsessionidをClient側やServer側に保存するのか。**
 
 Client側にsession idを保存するため、Cookieを利用します。Cookieの中に「user_session:hogehoge」という形で session id を保存します。
+
 session id は主にユーザーの識別に利用します。
 
 
@@ -56,6 +57,7 @@ session id は主にユーザーの識別に利用します。
 ## Pagination
 
 list取得系のAPIは、基本的にページ指定を有効にします。ページ指定に以下の3つのパラメータを使用します。
+
 取得したObject(questionsなど)には必ず ID が割り当てられています。
 
 
@@ -96,7 +98,7 @@ todo update
 
 # Core Objects
 
-##Questions 
+## Questions 
 
 QuestionsというObjectは、イベントや勉強などでユーザーから投稿される質問内容を表しています。
 
@@ -675,5 +677,4 @@ QuestionResourceがReturnされます
   ]
 }
 ```
-
 
