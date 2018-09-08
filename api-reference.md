@@ -391,6 +391,63 @@ QuestionResourceがReturnされます
 
 
 
+### Like a Question
+
+質問にいいね！を増やします
+
+
+
+URL
+
+```
+PUT /v1/questions/BosWT9EsdzgjPn/like
+```
+
+
+
+HTTP Header
+
+- Content-Type : application/json を指定します
+
+```
+-H "Content-Type: application/json"
+```
+
+
+
+パラメータ
+
+| Parameter | Description |
+| --------- | ----------- |
+| なし      | なし        |
+
+
+
+Request 例
+
+```
+curl -H "Content-Type: application/json" -X PUT https://api.qicoo.xx/v1/questions/BosWT9EsdzgjPn/like
+```
+
+
+
+Return 例
+
+QuestionResourceがReturnされます
+
+```
+{
+  "id": "BosWT9EsdzgjPn",
+  "object": "question",
+  "username": "sugimount",
+  "event": "jkd1812",
+  "program": "1",
+  "comment": "kubernetesの〇〇について教えてください！",
+  "created_at": "2018-09-08T09:07:09+09:00",
+  "updated_at": "2018-09-08T09:07:09+09:00",
+  "like": 1
+}
+```
 
 
 
