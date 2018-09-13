@@ -525,7 +525,7 @@ curl -H "Content-Type: application/json" -X POST https://api.qicoo.xx/v1/users -
 
 Return 例
 
-QuestionResourceがReturnされます
+UserResourceがReturnされます
 
 ```
 {
@@ -586,7 +586,7 @@ curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/users/IO
 
 Return 例
 
-QuestionResourceがReturnされます
+UserResourceがReturnされます
 
 ```
 {
@@ -707,7 +707,7 @@ curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/users?&l
 
 Return 例
 
-QuestionResourceがReturnされます
+UserResourceがReturnされます
 
 ```
 {
