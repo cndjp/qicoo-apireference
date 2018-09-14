@@ -361,6 +361,7 @@ QuestionResourceがReturnされます
 ```
 {
   "object": "list",
+  "type": "question",
   "data": [
     {
       "id": "BosWT9EsdzgjPn",
@@ -711,6 +712,7 @@ UserResourceがReturnされます
 ```
 {
   "object": "list",
+  "type": "user",
   "data": [
     {
       "id": "IOodngp39890ba",
