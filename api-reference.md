@@ -224,7 +224,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/questions/jkd1812/BosWT9EsdzgjPn
+curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions/BosWT9EsdzgjPn
 ```
 
 
@@ -260,7 +260,7 @@ QuestionResourceがReturnされます
 URL
 
 ```
-DELETE /v1/questions/jkd1812/BosWT9EsdzgjPn
+DELETE /v1/jkd1812/questions/BosWT9EsdzgjPn
 ```
 
 
@@ -286,7 +286,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X DELETE https://api.qicoo.xx/v1/questions/jkd1812/BosWT9EsdzgjPn
+curl -H "Content-Type: application/json" -X DELETE https://api.qicoo.xx/v1/jkd1812/questions/BosWT9EsdzgjPn
 ```
 
 
@@ -340,7 +340,6 @@ HTTP Header
 | ending_before  | ページ指定のカーソルとして使用します。ending_beforeにIDを指定すると、指定した IDの前のObjectで終わるデータを取得します。 | none    | String   |
 | sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at", "like" | none    | String   |
 | order          | ソートで使用する順序を指定します。昇順(asc), 降順(desc)      | asc     | String   |
-| event          | eventidを指定 "jkd1812"                                      | none    | String   |
 | program        | programidを指定 "1"                                          | none    | String   |
 
 
@@ -348,7 +347,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions?event=jkd1812&program=1&limit=2&sort=created_at&order=asc
+curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions?program=1&limit=2&sort=created_at&order=asc
 ```
 
 
