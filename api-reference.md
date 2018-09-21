@@ -31,7 +31,7 @@ https://api.qicoo.xx/
 
 
 
-![Cookie Flow](https://github.com/Sugi275/qa-apps-docs/blob/master/cokkie_flow.png "サンプル")
+![Cookie Flow](https://github.com/cndjp/qicoo-apireference/blob/master/cokkie_flow.png "サンプル")
 
 Client側にsession idを保存するため、Cookieを利用します。Cookieの中に「user_session:hogehoge」という形で session id を保存します。
 
