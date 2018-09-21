@@ -80,7 +80,7 @@ list取得系のAPIは、基本的にページ指定を有効にします。ペ�
 curlの例
 
 ```
-curl https://api.qicoo.xx/v1/jkd1812/questions?program=1&limit=3&starting_after=hoge&sort=create_at&order=asc
+curl https://api.qicoo.xx/v1/jkd1812/questions?program_id=1&limit=3&starting_after=hoge&sort=create_at&order=asc
 ```
 
 
@@ -150,8 +150,8 @@ HTTP Header
 
 | Parameter | Description                                                  |
 | --------- | ------------------------------------------------------------ |
-| event     | イベント(例 : jkd1812,  cndjp)のid                           |
-| program   | プログラム(例 : spinnaker触ってみた, slafford触ってみた)のid |
+| event_id     | イベント(例 : jkd1812,  cndjp)のid                           |
+| program_id   | プログラム(例 : spinnaker触ってみた, slafford触ってみた)のid |
 | comment   | 質問内容                                                     |
 
 
@@ -161,7 +161,7 @@ Request 例
 ```
 curl -H "Content-Type: application/json" -H 'Cookie: user_session=hogehoge' -X POST https://api.qicoo.xx/v1/jkd1812/questions -d '
 {
-  "program": "1",
+  "program_id": "1",
   "comment": "kubernetesの〇〇について教えてください！"
 }
 '
@@ -178,8 +178,8 @@ QuestionResourceがReturnされます
   "id": "BosWT9EsdzgjPn",
   "object": "question",
   "username": "sugimount",
-  "event": "jkd1812",
-  "program": "1",
+  "event_id": "jkd1812",
+  "program_id": "1",
   "comment": "kubernetesの〇〇について教えてください！",
   "created_at": "2018-09-08T09:07:09+09:00",
   "updated_at": "2018-09-08T09:07:09+09:00",
@@ -238,8 +238,8 @@ QuestionResourceがReturnされます
   "id": "BosWT9EsdzgjPn",
   "object": "question",
   "username": "sugimount",
-  "event": "jkd1812",
-  "program": "1",
+  "event_id": "jkd1812",
+  "program_id": "1",
   "comment": "kubernetesの〇〇について教えてください！",
   "created_at": "2018-09-08T09:07:09+09:00",
   "updated_at": "2018-09-08T09:07:09+09:00",
@@ -340,14 +340,14 @@ HTTP Header
 | ending_before  | ページ指定のカーソルとして使用します。ending_beforeにIDを指定すると、指定した IDの前のObjectで終わるデータを取得します。 | none    | String   |
 | sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at", "like" | none    | String   |
 | order          | ソートで使用する順序を指定します。昇順(asc), 降順(desc)      | asc     | String   |
-| program        | programidを指定 "1"                                          | none    | String   |
+| program_id        | programidを指定 "1"                                          | none    | String   |
 
 
 
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions?program=1&limit=2&sort=created_at&order=asc
+curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions?program_id=1&limit=2&sort=created_at&order=asc
 ```
 
 
@@ -365,8 +365,8 @@ QuestionResourceがReturnされます
       "id": "BosWT9EsdzgjPn",
       "object": "question",
       "username": "sugimount",
-      "event": "jkd1812",
-      "program": "1",
+      "event_id": "jkd1812",
+      "program_id": "1",
       "comment": "kubernetesの〇〇について教えてください！",
       "created_at": "2018-09-08T09:07:09+09:00",
       "updated_at": "2018-09-08T09:07:09+09:00",
@@ -376,8 +376,8 @@ QuestionResourceがReturnされます
       "id": "IOdeamop2243v",
       "object": "question",
       "username": "hhiroshell",
-      "event": "jkd1812",
-      "program": "1",
+      "event_id": "jkd1812",
+      "program_id": "1",
       "comment": "世界を平和にする方法を教えてください！",
       "created_at": "2018-09-08T09:09:09+09:00",
       "updated_at": "2018-09-08T09:09:09+09:00",
@@ -438,8 +438,8 @@ QuestionResourceがReturnされます
   "id": "BosWT9EsdzgjPn",
   "object": "question",
   "username": "sugimount",
-  "event": "jkd1812",
-  "program": "1",
+  "event_id": "jkd1812",
+  "program_id": "1",
   "comment": "kubernetesの〇〇について教えてください！",
   "created_at": "2018-09-08T09:07:09+09:00",
   "updated_at": "2018-09-08T09:07:09+09:00",
