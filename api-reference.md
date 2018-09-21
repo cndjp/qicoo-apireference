@@ -130,7 +130,7 @@ QuestionsというObjectは、イベントや勉強などでユーザーから�
 URL
 
 ```
-POST /v1/questions
+POST /v1/jkd1812/questions
 ```
 
 
@@ -150,7 +150,7 @@ HTTP Header
 
 | Parameter | Description                                                  |
 | --------- | ------------------------------------------------------------ |
-| event     | イベント(例 : jkd,  cndjp)のid                               |
+| event     | イベント(例 : jkd1812,  cndjp)のid                           |
 | program   | プログラム(例 : spinnaker触ってみた, slafford触ってみた)のid |
 | comment   | 質問内容                                                     |
 
@@ -159,9 +159,8 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -H 'Cookie: user_session=hogehoge' -X POST https://api.qicoo.xx/v1/questions -d '
+curl -H "Content-Type: application/json" -H 'Cookie: user_session=hogehoge' -X POST https://api.qicoo.xx/v1/jkd1812/questions -d '
 {
-  "event": "jkd1812",
   "program": "1",
   "comment": "kubernetesの〇〇について教えてください！"
 }
@@ -199,7 +198,7 @@ QuestionResourceがReturnされます
 URL 例
 
 ```
-GET /v1/questions/BosWT9EsdzgjPn
+GET /v1/jkd1812/questions/BosWT9EsdzgjPn
 ```
 
 
@@ -225,7 +224,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/questions/BosWT9EsdzgjPn
+curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/questions/jkd1812/BosWT9EsdzgjPn
 ```
 
 
@@ -261,7 +260,7 @@ QuestionResourceがReturnされます
 URL
 
 ```
-DELETE /v1/questions/BosWT9EsdzgjPn
+DELETE /v1/questions/jkd1812/BosWT9EsdzgjPn
 ```
 
 
@@ -287,7 +286,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X DELETE https://api.qicoo.xx/v1/questions/BosWT9EsdzgjPn
+curl -H "Content-Type: application/json" -X DELETE https://api.qicoo.xx/v1/questions/jkd1812/BosWT9EsdzgjPn
 ```
 
 
@@ -317,7 +316,7 @@ Return 例
 URL
 
 ```
-GET /v1/questions
+GET /v1/jkd1812/questions
 ```
 
 
@@ -349,7 +348,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/questions?event=jkd1812&program=1&limit=2&sort=created_at&order=asc
+curl -H "Content-Type: application/json" -X GET https://api.qicoo.xx/v1/jkd1812/questions?event=jkd1812&program=1&limit=2&sort=created_at&order=asc
 ```
 
 
@@ -400,7 +399,7 @@ QuestionResourceがReturnされます
 URL
 
 ```
-PUT /v1/questions/BosWT9EsdzgjPn/like
+PUT /v1/jkd1812/questions/BosWT9EsdzgjPn/like
 ```
 
 
@@ -426,7 +425,7 @@ HTTP Header
 Request 例
 
 ```
-curl -H "Content-Type: application/json" -X PUT https://api.qicoo.xx/v1/questions/BosWT9EsdzgjPn/like
+curl -H "Content-Type: application/json" -X PUT https://api.qicoo.xx/v1/jkd1812/questions/BosWT9EsdzgjPn/like
 ```
 
 
