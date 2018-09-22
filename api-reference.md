@@ -80,7 +80,7 @@ list取得系のAPIは、基本的にページ指定を有効にします。ペ�
 curlの例
 
 ```
-curl https://api.qicoo.xx/v1/jkd1812/questions?program_id=1&limit=3&starting_after=hoge&sort=create_at&order=asc
+curl https://api.qicoo.xx/v1/jkd1812/questions?program_id=1&limit=3&starting_after=hoge&sort=created_at&order=asc
 ```
 
 
