@@ -68,9 +68,8 @@ list取得系のAPIは、基本的にページ指定を有効にします。ペ�
 | Parameter      | Description                                                  | default | value                 |
 | -------------- | ------------------------------------------------------------ | ------- | --------------------- |
 | limit          | 取得するObjectの上限数を指定します。defaultで10です。1~100の間で指定することが出来ます。 | 10      | 1 ~ 100               |
-| starting_after | ページ指定のカーソルとして使用します。starting_afterにIDを指定すると、指定した IDの次のObjectから始まるデータを取得します。 | none    | id                    |
-| ending_before  | ページ指定のカーソルとして使用します。ending_beforeにIDを指定すると、指定した IDの前のObjectで終わるデータを取得します。 | none    | id                    |
-| sort           | ソートで使用する値を指定します。ソートで利用できる値は、Objectに依存します。 | none    | value                 |
+| start          | 取得するObjectの開始位置を指定します。                       | 1       | integer               |
+| sort           | ソートで使用する値を指定します。ソートで利用できる値は、Objectに依存します。 | created_at | value                 |
 | order          | ソートで使用する順序を指定します。                           | asc     | 昇順(asc), 降順(desc) |
 
 
@@ -336,9 +335,8 @@ HTTP Header
 | Parameter      | Description                                                  | default | Type     |
 | -------------- | ------------------------------------------------------------ | ------- | -------- |
 | limit          | 取得するObjectの上限数を指定します。defaultで10です。1~100の間で指定することが出来ます。 | 10      | interger |
-| starting_after | ページ指定のカーソルとして使用します。starting_afterにIDを指定すると、指定した IDの次のObjectから始まるデータを取得します。 | none    | String   |
-| ending_before  | ページ指定のカーソルとして使用します。ending_beforeにIDを指定すると、指定した IDの前のObjectで終わるデータを取得します。 | none    | String   |
-| sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at", "like" | none    | String   |
+| start          | 取得するObjectの開始位置を指定します。                       | 1       | integer  |
+| sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at", "like" | created_at    | String   |
 | order          | ソートで使用する順序を指定します。昇順(asc), 降順(desc)      | asc     | String   |
 | program_id        | programidを指定 "1"                                          | none    | String   |
 
@@ -688,9 +686,8 @@ HTTP Header
 | Parameter      | Description                                                  | default | Type     |
 | -------------- | ------------------------------------------------------------ | ------- | -------- |
 | limit          | 取得するObjectの上限数を指定します。defaultで10です。1~100の間で指定することが出来ます。 | 10      | interger |
-| starting_after | ページ指定のカーソルとして使用します。starting_afterにIDを指定すると、指定した IDの次のObjectから始まるデータを取得します。 | none    | String   |
-| ending_before  | ページ指定のカーソルとして使用します。ending_beforeにIDを指定すると、指定した IDの前のObjectで終わるデータを取得します。 | none    | String   |
-| sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at" | none    | String   |
+| start          | 取得するObjectの開始位置を指定します。                       | 1       | integer  |
+| sort           | ソートで使用する値を指定します。ソートで利用できる値は、"created_at" | created_at    | String   |
 | order          | ソートで使用する順序を指定します。昇順(asc), 降順(desc)      | asc     | String   |
 
 
